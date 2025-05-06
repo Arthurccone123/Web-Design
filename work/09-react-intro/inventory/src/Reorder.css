@@ -1,0 +1,32 @@
+.reorder-btn {
+  background-color: #646cff; 
+  color: white; 
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 8px; 
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer; 
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.reorder-btn:hover {
+  background-color: #535bf2; 
+}
+
+.reorder-btn:active {
+  transform: scale(0.98); 
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}

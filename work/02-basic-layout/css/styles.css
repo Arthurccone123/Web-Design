@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    background-color: white;
+}
+
+body {
+    font-family: Calibri, serif;
+    background-color: pink;
+    letter-spacing: 0.5px;
+}
+
+header {
+    background-color: plum;
+    color: white;
+    padding: 1.3em 0;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.primary-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.primary-nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.primary-nav li {
+    margin: 0 9vw;
+}
+
+.primary-nav a {
+    color: blue;
+    text-decoration: underline;
+    padding: 22px 5px;
+    font-size: 1.1em;
+}
+
+.primary-nav a:hover {
+    background-color: rebeccapurple;
+    color: white;
+}
+
+.local-menu {
+    width: 20%;
+    background-color: pink;
+    padding: 1em;
+    position: fixed;
+    min-height: 50vh;
+    border-right: 1px solid black;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.local-menu ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.local-menu a {
+    display: block;
+    color: blue;
+    text-decoration: underline;
+    padding: 0.5em 0;
+    margin-bottom: 30px;
+}
+
+.local-menu a:hover {
+    background-color: plum;
+    color: blue;
+}
+
+main {
+    margin-left: 20%;
+    padding: 1em;
+    background-color: pink;
+    font-weight: bold;
+    min-height: 50vh;
+}
+
+main p {
+    margin-bottom: 1em;
+}
+
+footer {
+    background-color: plum;
+    color: black;
+    text-align: left;
+    position: relative;
+    width: 100%;
+    padding: 1.5em 2em;
+    font-weight: bold;
+}

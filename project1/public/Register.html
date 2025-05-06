@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | Shaofan's Cat</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="Cats/Cat4.jpg" alt="Shaofan's Cat Logo" style="width: 50px; height: 50px;"></a>
+        <h1>Register</h1>
+    </header>
+   <nav>
+    <ul>
+        <li class="dropdown">Menu
+            <ul class="dropdown-content">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </li>
+        <li class="dropdown">External Links
+            <ul class="dropdown-content">
+                <li><a href="https://en.wikipedia.org/wiki/Cat" target="_blank">Wikipedia: Cat</a></li>
+                <li><a href="https://icatcare.org" target="_blank">International Cat Care</a></li>
+                <li><a href="https://www.tiktok.com/tag/cat" target="_blank">TikTok: #Cat</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+    <main class="main-register">
+    <h1>Register for More Information</h1>
+    <form action="/register" method="post" class="register-form">
+        <div class="form-group">
+            <label for="name">Name<span class="required">*</span>:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email<span class="required">*</span>:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="cat-interest">Do you like cats?<span class="required">*</span>:</label>
+            <select id="cat-interest" name="cat_interest" required>
+                <option value="">Select an option</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <input type="checkbox" id="subscribe" name="subscribe">
+            <label for="subscribe">I have read the privacy policy.</label>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn-register">Register</button>
+        </div>
+    </form>
+</main>
+    <footer>
+        <a href="privacy.html">Privacy Policy</a>
+    </footer>
+</body>
+</html>

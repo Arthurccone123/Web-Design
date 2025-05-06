@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Famous Cats</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <header>
+        <a href="index.html">
+            <img src="logo-unsplash.jpg" alt="Logo" id="logo" width="100" height="100">
+        </a>
+        <h1>Cats Power the Internet</h1>
+        <div id="hamburger-icon" tabindex="0">☰</div>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="famous-cats.html">Famous Cats</a></li>
+                <li><a href="events.html">Cat Events</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main-content">
+        <div class="grid-container">
+            <div class="card">
+                <h2>Whiskers</h2>
+                <img src="cat9-unsplash.jpg" alt="Famous Cat 1" class="cat-image">
+                <p>Whiskers, with his striking amber eyes and luxurious fur, is the epitome of elegance and grace. He enjoys lounging in sunny spots by the window, occasionally batting at passing shadows with his dainty paws. If you like him, please click the <button class="subscribe-btn" onclick="openModal()">Subscribe</button> to get its latest updates!</p>
+            </div>
+            <div class="card">
+                <h2> Luna</h2>
+                <img src="cat8-unsplash.jpg" alt="Famous Cat 2" class="cat-image">
+                <p>Luna, the mischievous calico, is a bundle of energy and curiosity. She can often be found exploring every nook and cranny of the house, her playful antics keeping everyone entertained. If you like her, please click the <button class="subscribe-btn" onclick="openModal()">Subscribe</button> to get its latest updates!</p>
+            </div>
+            <div class="card">
+                <h2> Simba</h2>
+                <img src="cat3-unsplash.jpg" alt="Famous Cat 3" class="cat-image">
+                <p>Simba, the regal orange tabby, exudes confidence and charisma. With his noble demeanor and majestic stride, he commands attention wherever he goes, ruling over his domain with a gentle yet firm paw. If you like him, please click the <button class="subscribe-btn" onclick="openModal()">Subscribe</button> to get its latest updates!</p>
+            </div>
+            <div class="card">
+                <h2>Midnight</h2>
+                <img src="cat4-unsplash.jpg" alt="Famous Cat 4" class="cat-image">
+                <p>Midnight, the sleek black cat, is a creature of mystery and intrigue. With her piercing green eyes and silent grace, she moves through the shadows like a ghost, her presence both enigmatic and captivating. If you like her, please click the <button class="subscribe-btn" onclick="openModal()">Subscribe</button> to get its latest updates!</p>
+            </div>
+            <div class="card">
+                <h2>Oliver</h2>
+                <img src="cat5-unsplash.jpg" alt="Famous Cat 5" class="cat-image">
+                <p>Oliver, the fluffy grey and white tuxedo cat, is a true gentleman with impeccable manners. He enjoys lounging on plush cushions and receiving chin scratches from adoring admirers. If you like him, please click the <button class="subscribe-btn" onclick="openModal()">Subscribe</button> to get its latest updates!</p>
+            </div>
+            <div class="card">
+                <h2>Ginger</h2>
+                <img src="cat7-unsplash.jpg" alt="Famous Cat 6" class="cat-image">
+                <p>Ginger, the playful ginger tabby, is a ball of energy and affection. Always eager for cuddles and playtime, she brightens the lives of her human companions with her infectious enthusiasm and boundless love. If you like her, please click the <button class="subscribe-btn" onclick="openModal()">Subscribe</button> to get its latest updates!</p>
+            </div>
+        </div>
+        <div class="modal-backdrop" id="modal-backdrop" onclick="closeModal()"></div>
+    </main>
+  <div id="subscribe-modal" class="modal" style="display:none;">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <form id="subscribe-form" action="/subscribe" method="post">
+            <div class="form-row">
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" required>
+                <span id="email-error" class="error-message"></span>
+            </div>
+            <div class="form-row">
+                <label for="confirm-email">Confirm Email:</label>
+                <input type="text" id="confirm-email" name="confirm-email" required>
+                <span id="confirm-email-error" class="error-message"></span>
+            </div>
+            <div class="button-row">
+                <button type="submit">Submit</button>
+                <button type="button" onclick="closeModal()">Cancel</button>
+            </div>
+            </form>
+         </div>
+       </div>
+     </form>
+   </div>
+</div>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="work.html">Work for Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="social.html">Social Media</a></li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

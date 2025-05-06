@@ -1,0 +1,174 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #75ceeb;
+    color: #fff;
+    padding: 10px 20px;
+    position: relative;
+}
+
+header img {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    height: 100px;
+    width: auto;
+}
+
+@media (max-width: 767px) {
+    header img {
+        position: relative;
+        left: 0;
+        top: 0;
+        height: 50px;
+        width: auto;
+    }
+
+    header h1 {
+        font-size: 1em;
+        margin-left: 60px;
+        padding-top: 10px;
+    }
+
+    .checkbox-label {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .checkbox-label input[type="checkbox"] {
+        margin-right: 0.5em;
+    }
+
+    .checkbox-label span {
+        white-space: nowrap;
+    }
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 10px;
+}
+
+.checkbox-label input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+footer {
+    background-color: #75ceeb;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: white;
+}
+
+form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button[type="submit"] {
+    display: block;
+    background-color: #75ceeb;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    margin: 0 auto;
+}
+
+.form-control label,
+.form-control input,
+.form-control select {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    header {
+        justify-content: center;
+    }
+
+    header img {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        height: 100px;
+    }
+
+    header h1 {
+        position: static;
+        font-size: 2em;
+        margin-left: 0;
+    }
+    .form-control {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .form-control label {
+        flex: 0 0 30%;
+        margin-right: 20px;
+        text-align: right;
+    }
+
+    .form-control input,
+    .form-control select {
+        flex: 1;
+        margin-bottom: 0;
+    }
+
+    .checkbox-control {
+        justify-content: flex-start;
+    }
+
+    .checkbox-control .checkbox-label {
+        flex-basis: auto;
+    }
+
+    .checkbox-label {
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .checkbox-label input[type="checkbox"] {
+        margin-right: 10px;
+    }
+}
